@@ -2,7 +2,6 @@ import settings as proj_settings
 import tasks
 
 from redis_tasks.contrib.graph import TaskGraph
-from redis_tasks.queue import Queue
 from redis_tasks.conf import settings
 settings.configure(proj_settings)
 
