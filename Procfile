@@ -1,1 +1,1 @@
-worker: RT_SETTINGS_MODULE=redis_tasks_examples.rt_settings redis_tasks worker
+worker: PYTHONPATH=$PWD RT_SETTINGS_MODULE=settings redis_tasks worker
