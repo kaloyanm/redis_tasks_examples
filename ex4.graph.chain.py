@@ -1,9 +1,11 @@
-import settings as proj_settings
 import tasks
 
 from redis_tasks.contrib.graph import chain
 from redis_tasks.conf import settings
-settings.configure(proj_settings)
+
+settings.configure_from_dict(
+    {'MIDDLEWARE': ['redis_tasks.contrib.graph.GraphMiddleware']})
+
 
 urls_to_inspect = [
     'http://www.python.org',
