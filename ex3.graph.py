@@ -14,9 +14,9 @@ urls_to_inspect = [
     'https://flask.palletsprojects.com/en/1.1.x/',
 ]
 
-# Specify the last task to run the in the graph
+# Manually con
 final_node = graph.add_task(dict(func=tasks.total_of_words))
 for url in urls_to_inspect:
     node = graph.add_task(dict(func=tasks.count_words_at_url, args=[url]))
-    graph.add_dependency(final_node, node)
+    graph.add_dependency(node, final_node)
 graph.enqueue()  # push them into the queue
