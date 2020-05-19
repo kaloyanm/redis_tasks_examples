@@ -1,0 +1,40 @@
+# Vagrant
+.vagrant
+Vagrantfile.local
+/.env
+ubuntu-xenial-16.04-cloudimg-console.log
+
+# python
+*.pyc
+__pycache__
+
+# pytest
+.cache
+.pytest_cache
+.coverage
+
+# npm
+npm-debug.log
+/node_modules/
+/build/
+
+# hydra
+/javascript/node_modules
+/javascript/dist
+/javascript/build
+/javascript/__backstop__/bitmaps/test/
+/javascript/__backstop__/report/
+
+# OS files
+Thumbs.db
+*Thumbs.db
+.DS_Store
+
+# IDEs
+*~
+*.swp
+.project
+.codeintel
+.idea
+.direnv/
+.envrc
