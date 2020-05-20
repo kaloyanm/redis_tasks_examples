@@ -1,11 +1,5 @@
 import tasks
-
 from redis_tasks.contrib.graph import TaskGraph
-from redis_tasks.conf import settings
-
-settings.configure_from_dict(
-    {'MIDDLEWARE': ['redis_tasks.contrib.graph.GraphMiddleware']})
-
 
 # Create the graph
 graph = TaskGraph()
