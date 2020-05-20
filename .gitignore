@@ -1,7 +1,6 @@
 # Vagrant
 .vagrant
 Vagrantfile.local
-/.env
 ubuntu-xenial-16.04-cloudimg-console.log
 
 # python

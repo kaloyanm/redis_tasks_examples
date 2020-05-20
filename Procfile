@@ -1,1 +1,1 @@
-worker: PYTHONPATH=$PWD RT_SETTINGS_MODULE=settings redis_tasks worker default low_prio_queue
+worker: PYTHONPATH=$PWD redis_tasks worker default low_prio_queue
