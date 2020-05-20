@@ -1,6 +1,7 @@
 import requests
 from redis_tasks import redis_task
 
+
 @redis_task()
 def count_words_at_url(url):
     resp = requests.get(url)
@@ -8,5 +9,5 @@ def count_words_at_url(url):
 
 
 @redis_task()
-def total_of_words():
-    pass
+def total_count():
+    print('Nothing found')
